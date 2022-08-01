@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 130.653 sec <<< FAILURE!
+Test Case 2- Navigate to All cloudwisers page and check duplicates name(Cloudwisers duplicate name check #1)  Time elapsed: 42.715 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Employee details not found
+	at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
+	at PageObjects.AllCouldwisersPage.getDuplicateNameSet(AllCouldwisersPage.java:108)
+	at StepDefinitions.CloudwiseFeatureDef.check_duplicate_name(CloudwiseFeatureDef.java:64)
+	at ✽.check duplicate name(file:///C:/Users/003SLW744/eclipse-workspace/CloudwiseProject/src/test/resources/Features/CloudwiseFeature_English.feature:13)
+

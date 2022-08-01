@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="StepDefinitions.TestRunner" time="129.225" errors="1" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="strip"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.3+7"/>
+    <property name="sun.boot.library.path" value="C:\Users\003SLW744\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\003SLW744\eclipse-workspace\CloudwiseProject"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\003SLW744\eclipse-workspace\CloudwiseProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.3+7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\003SLW~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\003SLW744\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17902265338918936054.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\003SLW744\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/003SLW744/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/003SLW744/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\003SLW744\AppData\Local\Microsoft\WindowsApps;;C:\Users\003SLW744\Desktop;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\003SLW744"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="003SLW744"/>
+    <property name="java.class.path" value="C:\Users\003SLW744\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Users\003SLW744\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="17.0.3"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Users\003SLW744\eclipse-workspace\CloudwiseProject\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.3+7"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Cloudwisers duplicate name check #1" name="Test Case 1- Open cloudwise URL and change the language" time="18.228"/>
+  <testcase classname="Cloudwisers duplicate name check #1" name="Test Case 2- Navigate to All cloudwisers page and check duplicates name" time="42.715">
+    <error message="Employee details not found" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Employee details not found
+	at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
+	at PageObjects.AllCouldwisersPage.getDuplicateNameSet(AllCouldwisersPage.java:108)
+	at StepDefinitions.CloudwiseFeatureDef.check_duplicate_name(CloudwiseFeatureDef.java:64)
+	at ✽.check duplicate name(file:///C:/Users/003SLW744/eclipse-workspace/CloudwiseProject/src/test/resources/Features/CloudwiseFeature_English.feature:13)
+</error>
+    <system-out>
+Scenario: Test Case 2- Navigate to All cloudwisers page and check duplicates name # src/test/resources/Features/CloudwiseFeature_English.feature:9
+  Given go to &quot;This is Cloudwise&quot; drop down                                       # StepDefinitions.CloudwiseFeatureDef.go_to_drop_down(java.lang.String)
+  When click on &quot;All cloudwisers&quot; sub menu                                        # StepDefinitions.CloudwiseFeatureDef.click_on(java.lang.String)
+  Then shoud be navigated to &quot;All cloudwisers&quot; page                               # StepDefinitions.CloudwiseFeatureDef.shoud_be_navigated_to_page(java.lang.String)
+Dept Name: Management
+Dept Name: Support
+Dept Name: Projects &amp; Support
+Dept Name: Sales
+Dept Name: Marketing
+Dept Name: Academy
+Dept Name: Development
+Dept Name: HR &amp; administration
+Dept Name: Warehouse
+Names in: Management
+Exception is: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@id=&quot;breadcrumbs&quot;]//*[text()=&quot;Alle Cloudwisers&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;IBM-PF3PG9FD&apos;, ip: &apos;192.168.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\003SLW~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64003/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a5969023322809b2ce7eae30625078fa
+  And check duplicate name                                                        # StepDefinitions.CloudwiseFeatureDef.check_duplicate_name()
+      java.lang.IllegalArgumentException: Employee details not found
+	at dev.failsafe.internal.util.Assert.isTrue(Assert.java:29)
+	at PageObjects.AllCouldwisersPage.getDuplicateNameSet(AllCouldwisersPage.java:108)
+	at StepDefinitions.CloudwiseFeatureDef.check_duplicate_name(CloudwiseFeatureDef.java:64)
+	at ✽.check duplicate name(file:///C:/Users/003SLW744/eclipse-workspace/CloudwiseProject/src/test/resources/Features/CloudwiseFeature_English.feature:13)
+
+</system-out>
+  </testcase>
+  <testcase classname="Cloudwisers duplicate name check #2" name="Test Case 1- Open cloudwise URL and change the language" time="13.094"/>
+  <testcase classname="Cloudwisers duplicate name check #2" name="Test Case 2- Navigate to All cloudwisers page and check duplicates name" time="55.188"/>
+</testsuite>
