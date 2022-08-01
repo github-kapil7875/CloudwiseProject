@@ -62,7 +62,7 @@ public class HomePage extends BaseClass {
 	{
 		try {
 			
-			Thread.sleep(5000);  // need to stable DOM elements 
+			Thread.sleep(5000);  //tried all dynamic waits nothing working so added hard wait of 5 sec to stable the page elements
 			wait.until(ExpectedConditions.elementToBeClickable(By.id(toggleIconId)));
 			WebElement toggleIcon = driver.findElement(By.id(toggleIconId));
 			JavascriptExecutor js = (JavascriptExecutor)driver;
